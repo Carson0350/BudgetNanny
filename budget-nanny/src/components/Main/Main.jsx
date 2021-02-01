@@ -1,7 +1,9 @@
 import React from 'react'
 import { Card, CardHeader, CardContent, Typography, Grid, Divider} from '@material-ui/core';
 
-import useStyles from './styles'
+import useStyles from './styles';
+import Form from './Form/Form';
+import List from './List/List'
 
 const Main = ({ title }) => {
   const classes = useStyles();
@@ -13,12 +15,12 @@ const Main = ({ title }) => {
         <Typography align='center' variant='h5'>total balance $50000000</Typography>
         <Typography variant='subtitle1' styles={{ lineHeight: '1.5em', marginTop: '20px'}}>total balance $50000000</Typography>
         <Divider />
-        {/* <Form/> */}
+        <Form />
       </CardContent>
       <CardContent className={classes.CardContent}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            {/* <List/> */}
+            <List/>
           </Grid>
         </Grid>
       </CardContent>
